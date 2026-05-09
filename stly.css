@@ -1,0 +1,96 @@
+
+body {
+    background-color: #050505;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* تصميم المنصات */
+.platform {
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%;
+    min-width: 400px;
+}
+
+.xbox { border-color: #107c10; box-shadow: inset 0 0 10px #107c10; }
+.playstation { border-color: #003791; box-shadow: inset 0 0 10px #003791; }
+
+.platform-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.xbox .platform-title { color: #107c10; }
+.playstation .platform-title { color: #0072ce; }
+
+/* أجيال الأجهزة */
+.generation {
+    margin-bottom: 25px;
+}
+
+.gen-label {
+    background: #1a1a1a;
+    padding: 5px 15px;
+    border-radius: 5px 20px 0 0;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.xbox .gen-label { border-bottom: 2px solid #107c10; }
+.playstation .gen-label { border-bottom: 2px solid #0072ce; }
+
+/* شبكة الألعاب */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.game-card {
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.game-card p {
+    font-size: 0.75rem;
+    padding: 8px 2px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
